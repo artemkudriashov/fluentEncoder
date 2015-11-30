@@ -12,8 +12,7 @@ RUN mkdir /fluent
 
 WORKDIR /fluent
 
-#COPY app/ app/
-git clone https://github.com/artemkudriashov/fluentEncoder.git /fluent
+RUN git clone https://github.com/artemkudriashov/fluentEncoder.git /fluent
 
 WORKDIR /fluent/app/
 
