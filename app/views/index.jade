@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Please  chose the files:
+
+    form(method="post",enctype="multipart/form-data",action="/")
+      p Video file &nbsp;
+        input(type="file",name="files",accept="video/*")
+      p Audio file &nbsp;
+        input(type="file",name="files",accept="audio/*")
+      p
+        input(type="submit")
