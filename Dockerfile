@@ -1,7 +1,8 @@
 FROM jrottenberg/ffmpeg
 
 RUN yum install -y \
-  curl 
+  curl \
+  git
 
 RUN mkdir /nodejs && curl http://nodejs.org/dist/v0.12.0/node-v0.12.0-linux-x64.tar.gz | tar xvzf - -C /nodejs --strip-components=1
 
